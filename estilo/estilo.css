@@ -1,24 +1,47 @@
-.body{
-    background-color: #ffe4c4;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    vertical-align: auto; 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+#conteudo-pag{
+    width: 50%;
     margin: auto;
+    padding: 10px;
+    text-align: center;
+    justify-content:center;
+}
+
+html, body{
+    height: 100%;
+}
+
+.body{
+    max-width: 100%;
+    padding:0;
+    margin:auto;
+    background-color: #ffe4c4;
 }
 
 .conteudo-login{
-    align-items: center;
-    justify-content: center;
     text-align: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 30%;
 }
 
 .logojasminne{
     min-width: auto;
-    max-width: 15%;
+    max-width: 40%;
+    margin-bottom: 30px;
+}
+
+.login{
+    height: 100%;
 }
 
 .textologin{
+    height: 80%;
     text-decoration: none;
     color: #831D16;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -31,7 +54,7 @@
 .caixa-de-entrada{
     color: gray;
     margin: 0px;
-    height: 20%;
+    height: 80%;
     border-color: #831D16;
     border-radius: 5px;
 }
@@ -40,7 +63,7 @@
     background-color: #831D16;
     color: white;
     border:1px solid black;
-    border-radius:4px;
+    border-radius:5px;
     display:inline-block;
     cursor:pointer;
     font-family:Verdana;
@@ -56,6 +79,92 @@
     top:2px;
 }
 
-@media screen and (max-width: 1024px){
-   
+@media screen and (max-width: 992px){
+    #conteudo-pag{
+        width: 100%;
+        margin: auto;
+        margin-top: 50%;
+        padding: 10px;
+        text-align: center;
+        justify-content:center;
+        height: auto;
+    }
+
+    .login{
+        height: auto;
+    }
+
+    .textologin{
+        height: auto;
+        font-size: 70px;
+        text-decoration: none;
+        color: #831D16;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .caixa-de-entrada{
+        color: gray;
+        margin: auto;
+        width: 300px;
+        height: 40px;
+        border-color: #831D16;
+        border-radius: 5px;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .enviar{
+        font-size:35px;
+        padding: 5px 8px;
+        text-decoration:none;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    #conteudo-pag{
+        width: 100%;
+        margin: auto;
+        margin-top: 50%;
+        padding: 10px;
+        text-align: center;
+        justify-content:center;
+        height: auto;
+    }
+
+    .login{
+        height: auto;
+    }
+
+    .textologin{
+        height: auto;
+        font-size: 40px;
+        text-decoration: none;
+        color: #831D16;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .caixa-de-entrada{
+        color: gray;
+        margin: auto;
+        width: 500px;
+        height: 70px;
+        border-color: #831D16;
+        border-radius: 5px;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .enviar{
+        font-size:40px;
+        padding: 5px 8px;
+        text-decoration:none;
+        margin-top: 15px;
+    }
 }
