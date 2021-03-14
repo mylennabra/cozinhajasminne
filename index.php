@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="estilo/estilo.css">
+<script type="text/javascript" src="js/animation.js"></script>
+<head>
+    <title class="titulo">
+        Banco de dados cozinha,
+    </title>
+</head>
+
+<body class="body">
+<section class="conteudo-login">
+    <!-- FORMULARIO QUE VAI ENVIA AS INFORMAÇOES DE USUARIO E SENHA PRA (Controller/ControllerLogin.php)  -->
+    <form method="POST" action="Controller/ControllerLogin.php">
+        <div id="conteudo-pag">
+            <div class="login">
+                <div>
+                    <img src="estilo/logojasminne.png" alt="logo da loja" class="logojasminne">
+                </div>
+                <div class="textologin">
+                    <p class="texto">USUÁRIO:</p>
+                </div>
+                <div class="caixa-de-entrada">
+                    <input class="caixa-de-entrada" type="text" name="usuario" placeholder="Insira seu usuário">
+                </div>
+                <div class="textologin">
+                    <p class="textologin">SENHA:</p>
+                </div>
+                <div class="caixa-de-entrada">
+                    <input class="caixa-de-entrada" type="password" name="senha" placeholder="Insira sua senha">
+                </div>
+            </div>
+            <button class="enviar" type="submit">Enviar</button>
+
+            <div>
+    </form>
+
+    <?php
+    if (isset($_GET['errada'])): ?>
+    <div class="alerUsuarioerrado">
+        <label class="caixa_nome_erro_usuario"> Usuario Ou senha incoreto </label>
+        <div
+        <?php endif; ?>
+
+    </div>
+</section>
+</div>
+</body>
+
+</html>

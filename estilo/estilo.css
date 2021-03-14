@@ -188,3 +188,18 @@
         margin-top: 10px;
     }
 }
+
+.alerUsuarioerrado{
+    font-family: "Arial Narrow";
+    color: white;
+    height: 30px;
+    width: 220px;
+    background: orangered;
+    margin-top: 10px;
+    margin-left: 850px;
+    border-radius: 10px;
+}
+.caixa_nome_erro_usuario{
+    margin-top: 10px;
+    text-align: center;
+}
