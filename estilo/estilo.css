@@ -6,19 +6,16 @@
 
 #conteudo-pag {
     width: 30%;
+    height: auto;
     margin: auto;
     padding: 10px;
     text-align: center;
     justify-content: center;
-}
-
-html,
-body {
-    height: 100%;
+    display: flexbox;
 }
 
 .body {
-    max-width: 100%;
+    max-width: auto;
     padding: 0;
     margin: auto;
     background-color: #ffe4c4;
@@ -32,7 +29,7 @@ body {
 
 .logojasminne {
     min-width: auto;
-    max-width: 20%;
+    max-width: 15%;
     margin-bottom: 20px;
 }
 
@@ -79,22 +76,42 @@ body {
     top: 2px;
 }
 
+.tabela{
+    margin: auto;
+    table-layout: fixed;
+    text-align: center;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    border: 5px #831D16;
+}
+
+/* PRA CELULAR*/
+@media screen and (max-width: 600px) {
+}
+
+/*PRA TABLET*/
 @media screen and (max-width: 992px) {
     #conteudo-pag {
         width: 100%;
         margin: auto;
-        margin-top: 50%;
+        margin-top: 3%;
         padding: 10px;
         text-align: center;
         justify-content: center;
         height: auto;
     }
+
+    .logojasminne{
+        max-width: 20%;
+    }
+
     .login {
         height: auto;
     }
     .textologin {
         height: auto;
-        font-size: 70px;
+        font-size: 45px;
         text-decoration: none;
         color: #831D16;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -110,7 +127,9 @@ body {
         border-color: #831D16;
         border-radius: 5px;
         align-items: center;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
+        font-size: 25px;
+        text-align: center;
     }
     .enviar {
         font-size: 35px;
@@ -120,13 +139,18 @@ body {
     }
 }
 
+/*PRA COMPUTADOR*/
 @media screen and (min-width: 992px) {
+    *{
+        align-items: center;
+        align-content: center;
+        
+    }
+
     #conteudo-pag {
         width: 100%;
-        margin: auto;
-        margin-top: 50%;
+        margin-top: 3%;
         padding: 10px;
-        text-align: center;
         justify-content: center;
         height: auto;
     }
@@ -135,7 +159,7 @@ body {
     }
     .textologin {
         height: auto;
-        font-size: 40px;
+        font-size: 30px;
         text-decoration: none;
         color: #831D16;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -144,19 +168,23 @@ body {
         margin-bottom: 10px;
     }
     .caixa-de-entrada {
-        color: gray;
+        color:gray;
         margin: auto;
-        width: 500px;
-        height: 70px;
+        width: 300px;
+        height: 40px;
         border-color: #831D16;
         border-radius: 5px;
         align-items: center;
         margin-bottom: 15px;
+        font-size: 25px;
+        text-align: center;
+        
     }
+
     .enviar {
-        font-size: 40px;
+        font-size: 25px;
         padding: 5px 8px;
         text-decoration: none;
-        margin-top: 15px;
+        margin-top: 10px;
     }
 }
