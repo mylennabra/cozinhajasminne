@@ -1,3 +1,3 @@
 # cozinhajasminne
-isael
-mylennaaaa
+isael : BACK-END
+mylennaaaa : FRONT-END
