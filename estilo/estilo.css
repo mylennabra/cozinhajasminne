@@ -84,6 +84,16 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     border: 5px #831D16;
+    color: black;
+}
+
+.caixa-cadastro{
+    margin:0;
+    font-size: 20px;
+    height:auto;
+    width: auto;
+    background-color: #ffe4c4;
+    padding:5px;
 }
 
 /* PRA CELULAR*/
