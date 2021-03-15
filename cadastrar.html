@@ -13,72 +13,62 @@
 
 <body class="body">
 
-    <section class="conteudo-login">
-        <!-- fORMULARIO QUE VAI ENVIA AS INFORMAÇOES DE USUARIO E SENHA PRA PAGINA PHP -->
-        <form method="POST" action="">
-            <div id="conteudo-pag">
-                <div class="login">
-                    <div>
-                        <img src="estilo/logojasminne.png" alt="logo da loja" class="logojasminne">
-                    </div>
-                    <div class="textologin">
-                        <p class="texto">CLIENTE:</p>
-                    </div>
+<section class="conteudo-login">
+    <!-- fORMULARIO QUE VAI ENVIA AS INFORMAÇOES DE USUARIO E SENHA PRA PAGINA PHP -->
+    <div id="conteudo-pag">
+        <div class="login">
+            <div>
+                <img src="estilo/logojasminne.png" alt="logo da loja" class="logojasminne">
+            </div>
+            <form method="post" action="../Controler/controllerCadastrosClientes.php">
+                <div class="textologin">
+                    <p class="texto">CADASTRO:</p>
+                </div>
+                <table class="tabela" border="2px">
+                    <tr>
+                        <th>CLIENTE</th>
+                        <td><input class="caixa-cadastro" type="text" name="cliente"></td>
+                    </tr>
 
-                    <table class="tabela" border="2px">
-                        <tr>
-                            <th>TELEFONE</th>
-                            <form method="POST" action="">                            
-                            <td><input class="caixa-cadastro" type="text" name="telefone"></td>
-                            </form>
-                        </tr>
-                        <tr>
-                            <th>BAIRRO</th>
-                            <form method="POST" action="">
-                            <td><input class="caixa-cadastro" type="text" name="bairro"></td>
-                            
-                            </form>
-                        </tr>
-                        <tr>
-                            <th>RUA</th>
-                            <form method="POST" action="">
-                                <td><input class="caixa-cadastro" type="text" name="rua"></td>
-                              
-                                </form>
-                        </tr>
-                        <tr>
-                            <th>QUADRA</th>
-                            <form method="POST" action="">
-                                <td><input class="caixa-cadastro" type="text" name="quadra"></td>
-                                
-                                </form>
-                        </tr>
-                        <tr>
-                            <th>LOTE</th>
-                            <form method="POST" action="">
-                                <td><input class="caixa-cadastro" type="text" name="lote"></td>
-                              
-                                </form>
-                        </tr>
-                        <tr>
-                            <th>COMPLEMENTO</th>
-                            <form method="POST" action="">
-                                <td><input class="caixa-cadastro" type="text" name="complemento"></td>
-                             
-                                </form>
-                        </tr>
-                    </table>
+                    <tr>
+                        <th>TELEFONE</th>
+                        <td><input class="caixa-cadastro" type="text" name="telefone"></td>
+                    </tr>
+                    <tr>
+                        <th>BAIRRO</th>
+                        <td><input class="caixa-cadastro" type="text" name="bairro"></td>
+                    </tr>
+                    <tr>
 
-                    <div class="botoes">
-                        <button class="enviar" type="submit">Cadastrar</button>
-                        <!--  "<a> esta com o link para redirecionar para a pagina buca , ao clicar "-->
-                        <a class="enviar" href="buscar.html">Buscar</a>
-                    </div>
-                    <div>
-                    </div>
-        </form>
-    </section>
-    </div>
+                        <th>RUA</th>
+                        <td><input class="caixa-cadastro" type="text" name="rua"></td>
+                    </tr>
+                    <tr>
+                        <th>QUADRA</th>
+
+                        <td><input class="caixa-cadastro" type="text" name="quadra"></td>
+                    </tr>
+                    <tr>
+                        <th>LOTE</th>
+                        <td><input class="caixa-cadastro" type="text" name="lote"></td>
+                    </tr>
+                    <tr>
+                        <th>COMPLEMENTO</th>
+
+                        <td><input class="caixa-cadastro" type="text" name="complemento"></td>
+                    </tr>
+                </table>
+
+                <div class="botoes">
+                    <button class="enviar" type="submit">Cadastrar</button>
+                    <!--  "<a> esta com o link para redirecionar para a pagina buca , ao clicar "-->
+                    <a class="enviar" href="buscar.html">Buscar</a>
+                </div>
+                <div>
+                </div>
+            </form>
+</section>
+</div>
 </body>
 
 </html>
