@@ -37,10 +37,10 @@
 
     <?php
     if (isset($_GET['errada'])): ?>
-        <div class="alerUsuarioerrado">
-            <label class="caixa_nome_erro_usuario"> Usuario Ou senha incoreto </label>
+    <div class="alerUsuarioerrado">
+        <label class="caixa_nome_erro_usuario"> Usuario Ou senha incoreto </label>
         </div>
-    <?php endif; ?>
+        <?php endif; ?>
 
     </div>
 </section>

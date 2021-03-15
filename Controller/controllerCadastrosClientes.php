@@ -1,7 +1,7 @@
 <?php
 include '../Model/Cadastro.php';
 
-$cadastro = new Cadastro();
+
 
 $cliente     = $_POST['cliente'];
 $telefone    = $_POST['telefone'];
@@ -10,5 +10,5 @@ $rua         = $_POST['rua'];
 $quadra      = $_POST['quadra'];
 $lote        = $_POST['lote'];
 $complemento = $_POST['complemento'];
-
+$cadastro = new Cadastro();
 $cadastro->cadastraClienteBancoDeDados($cliente,$telefone,$bairro,$rua,$quadra,$lote,$complemento);
