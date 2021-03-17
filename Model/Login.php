@@ -15,7 +15,7 @@ class Login extends Conexao
         $sql->execute();
             if ($sql->rowCount() > 0){
 
-                header("Location: ../buscar.html");
+                header("Location: ../buscar.php");
             }else{
                 header("Location: ../index.php?errada");
             }

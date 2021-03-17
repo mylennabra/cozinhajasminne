@@ -191,6 +191,7 @@
         
     }
 
+
     .enviar {
         font-size: 25px;
         padding: 5px 8px;
@@ -212,4 +213,19 @@
 .caixa_nome_erro_usuario{
     margin-top: 10px;
     text-align: center;
+}
+
+.resutadoConsuta{
+    color: black;
+    background: white;
+    width: 60%;
+    margin-top: 10px;
+    flex: auto;
+    border-radius: 20px;
+    margin-left: 20%;
+    font-size: large;
+    border:brown solid 0px  ;
+    border-left-color:#831D16;
+
+
 }

@@ -18,11 +18,11 @@ class Cadastro extends Conexao
         $sql->bindValue(":lote", $lote);
         $sql->bindValue(":complemento", $complemento);
         $sql->execute();
-             if ($sql->rowCount() > 0)  {
-                header("Location: ../buscar.html?ok");
-            } else {
-                header("Location: ../cadastrar.html?erro");
-            }
+        if ($sql->rowCount() > 0) {
+            header("Location: ../buscar.php?ok");
+        } else {
+            header("Location: ../cadastrar.html?erro");
+        }
 
     }
 
